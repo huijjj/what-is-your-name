@@ -1,5 +1,6 @@
 import './Quiz.css';
 import React, { useEffect, useState } from 'react';
+import { FaRedo } from "react-icons/fa";
 
 function Quiz() {
     const [ score, setScore ] = useState(Number(0));
@@ -61,6 +62,7 @@ function Quiz() {
         console.log(correct ? "correct!" : "wrong!");
         setScore(score + (correct ? 1 : -1));
 
+        // if(index == 2) {
         if(index == quizList.length - 1) {
             console.log("done");
             setResultVisible(true);
@@ -72,6 +74,9 @@ function Quiz() {
         return false;
     }
 
+    function onRetry() {
+        window.location.reload();
+    }
 
     useEffect(() => {
         setScore(0);
@@ -158,7 +163,10 @@ function Quiz() {
             resultVisible ? 
             <div className="result">
                 <div className="result__score">{score}</div>
-                <div className="result__comment">{getComment()}</div>
+                <div className="result__content">
+                    <div className="result__comment">{getComment()}</div>
+                    <FaRedo className="result__redo" size="36" onClick={onRetry}/>
+                </div>
             </div>:
             <>
                 <div className="score">{score}</div>

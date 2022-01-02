@@ -37,6 +37,18 @@
     font-size: 10rem;
 }
 
+.result__content {
+    display: flex;
+    align-items: center;
+}
+
 .result__comment {
     font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.result__redo:hover {
+    -ms-transform: rotate(60deg); 
+    -webkit-transform: rotate(60deg); 
+    transform: rotate(60deg);
 }
