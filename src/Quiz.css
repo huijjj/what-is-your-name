@@ -9,10 +9,10 @@
 }
 
 .score {
-    text-align: right;
+    text-align: center;
     padding-top: 0.3vh;
     padding-right: 2vw;
-    font-size: 10vw;
+    font-size: 5vw;
 }
 
 .quiz__question {

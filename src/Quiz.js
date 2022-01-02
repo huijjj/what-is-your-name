@@ -162,14 +162,14 @@ function Quiz() {
         <>{
             resultVisible ? 
             <div className="result">
-                <div className="result__score">{score}</div>
+                <div className="result__score">최종 점수 : {score}</div>
                 <div className="result__content">
                     <div className="result__comment">{getComment()}</div>
                     <FaRedo className="result__redo" size="36" onClick={onRetry}/>
                 </div>
             </div>:
             <div className="content_wrapper">
-                <div className="score">{score}</div>
+                <div className="score">점수 : {score}</div>
                 <div className="quiz">
                     <div className="quiz__question">{quizList[index]?.problem}</div>
                     <form className="quiz__form" onSubmit={onSubmit} autoComplete="off">
