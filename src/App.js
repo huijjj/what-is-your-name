@@ -1,11 +1,16 @@
 import './App.css';
+
+import Header from './component/Header.js' 
 import Quiz from './Quiz.js';
 
 function App() {
   return (
-    <div className="App">
-      <Quiz />
-    </div>
+    <>
+      <Header/>
+      <div className="App">
+        <Quiz />
+      </div>
+    </>
   );
 }
 
