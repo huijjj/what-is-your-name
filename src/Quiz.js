@@ -174,6 +174,7 @@ function Quiz() {
                     <div className="quiz__question">{quizList[index]?.problem}</div>
                     <form onSubmit={onSubmit} autoComplete="off">
                         <input autoFocus placeholder="What is my name?" type="text" name="answer" className="quiz__answer"></input>
+                        <input className="quiz__submit" type="submit" value="OK"/>
                     </form>
                 </div>
             </>

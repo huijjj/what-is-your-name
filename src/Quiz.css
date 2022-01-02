@@ -23,6 +23,12 @@
     font-size: 1.5vw;
     border-radius: 4vw;
     text-align: center;
+    margin-right: 0.5vw;
+}
+
+.quiz__submit {
+    font-size: 1.5vw;
+    border-radius: 3vw;
 }
 
 .result {
