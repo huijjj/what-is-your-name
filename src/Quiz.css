@@ -1,33 +1,40 @@
+
 .quiz {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 20vh;
     flex-direction: column;
     min-width: 100vw;
 }
 
 .score {
     text-align: right;
-    padding-top: 1vw;
+    padding-top: 0.3vh;
     padding-right: 2vw;
-    font-size: 6vw;
+    font-size: 10vw;
 }
 
 .quiz__question {
-    font-size: 3.5vw;
+    font-size: 7vw;
     padding-bottom: 1vw;
 }
 
+.quiz__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .quiz__answer {
-    font-size: 1.5vw;
+    font-size: 3vw;
     border-radius: 4vw;
     text-align: center;
     margin-right: 0.5vw;
 }
 
 .quiz__submit {
-    font-size: 1.5vw;
+    font-size: 3vw;
     border-radius: 3vw;
 }
 
@@ -49,7 +56,7 @@
 }
 
 .result__comment {
-    font-size: 2vw;
+    font-size: 6vw;
     padding-right: 1vw;
 }
 
