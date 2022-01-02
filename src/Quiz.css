@@ -4,24 +4,24 @@
     align-items: center;
     min-height: 80vh;
     flex-direction: column;
+    min-width: 100vw;
 }
 
 .score {
     text-align: right;
-    padding-top: 1rem;
-    padding-right: 2rem;
-    font-size: 5rem;
-
+    padding-top: 1vw;
+    padding-right: 2vw;
+    font-size: 6vw;
 }
 
 .quiz__question {
-    font-size: 3rem;
-    padding-bottom: 1rem;
+    font-size: 3.5vw;
+    padding-bottom: 1vw;
 }
 
 .quiz__answer {
-    font-size: 2.5rem;
-    border-radius: 2rem;
+    font-size: 1.5vw;
+    border-radius: 4vw;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .result__score {
-    font-size: 10rem;
+    font-size: 20vw;
 }
 
 .result__content {
@@ -43,8 +43,8 @@
 }
 
 .result__comment {
-    font-size: 2rem;
-    padding-right: 1rem;
+    font-size: 2vw;
+    padding-right: 1vw;
 }
 
 .result__redo:hover {
