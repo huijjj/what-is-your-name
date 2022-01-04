@@ -1,6 +1,6 @@
 import React from 'react';
 import imgCamp from './img.png';
-import './style.css';
+import './Header.css';
 
 const Header = ({onChangePage}) => {
 

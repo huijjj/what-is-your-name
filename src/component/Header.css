@@ -1,0 +1,32 @@
+.menu{
+    background-color: black;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-text{
+    color: white;
+    margin-left: 2rem;
+}
+
+.menu-text:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.header img{
+    width: 12rem;
+    height: 12rem;
+}
+
+.header-text {
+    font-size: 5rem;
+}
