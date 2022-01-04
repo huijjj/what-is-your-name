@@ -5,28 +5,38 @@
     flex-direction: row;
 }
 
-.menu-text{
-    color: white;
-    margin-left: 2rem;
-}
 
-.menu-text:hover{
-    cursor: pointer;
-    color: gray;
-}
+
+
 
 .header{
+    background-color: black;
+    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
+    justify-content: space-between;
 }
+
 .header img{
-    width: 12rem;
-    height: 12rem;
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1rem;
 }
 
 .header-text {
-    font-size: 5rem;
+    font-size: 2vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-score {
+    font-size: 4vw;
+    color: white;
 }

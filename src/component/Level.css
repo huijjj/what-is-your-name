@@ -1,0 +1,10 @@
+.Level {
+    display: flex;
+    justify-content: space-around;
+    min-height: 60vh;
+    align-items: center;
+}
+
+.Level div {
+    font-size: 5vw;
+}

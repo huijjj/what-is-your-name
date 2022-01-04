@@ -9,28 +9,35 @@ import LevelSelector from './component/LevelSelector.js'
 
 function App() {
 
-  const [state, setState] = useState(1)
+  const [state, setState] = useState(Number(0))
+  const [score, setScore] = useState(Number(0))
 
-  const onClickChange = (idx) => {
-    setState(idx)
+  const onLevelSelect = (level) => {
+    setState(Number(level));
+    console.log(level);
+  }
+
+  const scoreFuntion = (diff) => {
+    setScore(score + Number(diff));
   }
 
   let content;
-
   if(state === 0) {
-    content = <LevelSelector />
+    content = <LevelSelector onSelect={onLevelSelect} />
   }
   else if(state === 1){
-    content = <Quiz1 />
+    content = <Quiz1 score={score} setScore={scoreFuntion}/>
   }
   else if(state === 2){
-    content = <Quiz2 />
+    content = <Quiz2 score={score} setScore={scoreFuntion}/>
   }
 
   return (
     <div className="App">
-      <Header />
-      
+      <Header score={score} showScore={state != 0} />
+      <div className="content__wrapper">{
+        content
+      }</div>
     </div>
   );
 }

@@ -2,8 +2,7 @@ import './Quiz1.css';
 import React, { useEffect, useState } from 'react';
 import { FaRedo } from "react-icons/fa";
 
-function Quiz1() {
-    const [ score, setScore ] = useState(Number(0));
+function Quiz1({ score, setScore }) {
     const [ quizList, setQuizList ] = useState([]);
     const [ index, setIndex ] = useState(Number(0));
     const [ resultVisible, setResultVisible ] = useState(false);
@@ -60,7 +59,7 @@ function Quiz1() {
         // console.log("answer handed in: ", e.currentTarget.elements.answer.value);
         // console.log("real answer: ", quizList[index].answer);
         console.log(correct ? "correct!" : "wrong!");
-        setScore(score + (correct ? 1 : -1));
+        setScore(correct ? 1 : -1);
 
         // if(index == 2) {
         if(index == quizList.length - 1) {
@@ -162,14 +161,13 @@ function Quiz1() {
         <>{
             resultVisible ? 
             <div className="result">
-                <div className="result__score">최종 점수 : {score}</div>
+                <div className="result__score">{score}</div>
                 <div className="result__content">
                     <div className="result__comment">{getComment()}</div>
                     <FaRedo className="result__redo" size="36" onClick={onRetry}/>
                 </div>
             </div>:
             <div className="content_wrapper">
-                <div className="score">점수 : {score}</div>
                 <div className="quiz">
                     <div className="quiz__question">{quizList[index]?.problem}</div>
                     <form className="quiz__form" onSubmit={onSubmit} autoComplete="off">
